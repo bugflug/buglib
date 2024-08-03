@@ -1,0 +1,22 @@
+// valve.rc is like an autoexec, except it seems to have default behaviors?
+// i've tried to mimic that here and only insert new code where necessary.
+
+// this is STILL INVASIVE!!!!!!!! fuck huds and libs taht do this
+// just exec buglib
+
+// 1. default
+// 2. default
+exec joystick.cfg
+r_decal_cullsize 1
+
+// 1. new
+// 2. default
+exec buglib
+exec autoexec.cfg
+
+// 1. default
+// 2. default
+// 3. default
+stuffcmds
+startupmenu
+sv_unlockedchapters 99
